@@ -12,12 +12,6 @@ jobs:
             TF_VERSION: "0.11.13"
     steps:
       - checkout
-#      - setup_remote_docker:
-#          docker_layer_caching: true
-      # Download and cache dependencies
-#      - restore_cache:
-#          keys:
-#          - v2-dependencies-
       - run:
           name: Install Terraform
           command: |
